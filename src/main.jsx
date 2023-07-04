@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import LoginForm from './components/login.jsx';
+import LoginForm from './components/Login.jsx';
 import RegisterForm from './components/Register.jsx';
 import Phonenoform from './components/Phoneno.jsx';
 import Numberverificationform from './components/Numberverification.jsx'
