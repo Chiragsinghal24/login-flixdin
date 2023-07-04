@@ -1,12 +1,12 @@
 import React from 'react';
-import Logo from '../assets/film.png'
-const Domainselectionform  = () => {
+import Logo from '../assets/Skills.png'
+const Skillselectionform = () => {
   return (
     <>
-      <img src={Logo} className='mx-auto w-20' alt="" />
-      <p className="text-md font-semibold text-center text-black">Select domain</p>
-      <p className="text-xs font-normal text-center text-black">The domain describes your main profession.</p>
-      <div className="radio-container flex flex-col text-black text-sm">
+      <img src={Logo} className='mx-auto w-24' alt="" />
+      <p className="text-1xl font-semibold text-center text-black">Add Other Skills</p>
+      <p className="text-1xl font-normal text-center text-black">Add other skills other than the main domain selected.</p>
+      <div className="radio-container border border-[#978839] p-3 rounded-md flex flex-col text-black text-sm">
         <div className='flex flex-row-reverse w-full justify-between items-center'><input type="radio" id="domain" name="domain" value="Actor"/><span>Actor</span></div>
         <div className='flex flex-row-reverse w-full justify-between items-center'><input type="radio" id="domain" name="domain" value="Animation"/><span>Animation</span></div>
         <div className='flex flex-row-reverse w-full justify-between items-center'><input type="radio" id="domain" name="domain" value="Art Director"/><span>Art Director</span></div>
@@ -21,9 +21,8 @@ const Domainselectionform  = () => {
         <div className='flex flex-row-reverse w-full justify-between items-center'><input type="radio" id="domain" name="domain" value="Producer"/><span>Producer</span></div>
       </div>
       <div className="form-control mt-2">
-        <button className="btn bg-[#C6B34E] rounded-full border-none text-black hover:bg-[#978839] normal-case">Next</button>
-        <p className="text-1xl font-semibold text-center text-[#978839]">Go back</p>
-        <label className="label text-center mx-auto mt-2">
+        <button className="btn bg-[#C6B34E] rounded-full normal-case border-none text-black hover:bg-[#978839]">Add Skills</button>
+        <label className="label text-center mx-auto mt-1">
           <a href="#" className="label-text-alt link link-hover">Already have an account? Login!</a>
         </label>
       </div>
@@ -31,4 +30,4 @@ const Domainselectionform  = () => {
   );
 };
 
-export default Domainselectionform ;
+export default Skillselectionform;

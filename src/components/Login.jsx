@@ -18,7 +18,7 @@ const LoginForm = () => {
         <input type="password" placeholder="Enter password" className="input rounded-full border-[#978839] bg-white" />
       </div>
       <div className="form-control mt-6">
-        <button className="btn bg-[#C6B34E] rounded-full border-none text-black hover:bg-[#978839]">Login</button>
+        <button className="btn bg-[#C6B34E] normal-case rounded-full border-none text-black hover:bg-[#978839] ">Login</button>
         <label className="label text-center mx-auto mt-8">
           <a href="#" className="label-text-alt link link-hover">Don’t have an account? Register!</a>
         </label>

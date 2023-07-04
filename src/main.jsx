@@ -11,9 +11,14 @@ import RegisterForm from './components/Register.jsx';
 import Phonenoform from './components/Phoneno.jsx';
 import Numberverificationform from './components/Numberverification.jsx'
 import Domainselectionform from './components/Selectdomain.jsx'
+import Skillselectionform from './components/Otherskills';
+import TermsForm from './components/T&c';
+import Birthdayform from './components/Birthday';
+import Thanks from './components/Thanks';
+
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/auth",
     element: <Auth/>,
     children: [
       {
@@ -36,9 +41,23 @@ const router = createBrowserRouter([
         path: "domain",
         element: <Domainselectionform />
       },
-
-
+      {
+        path:"terms",
+        element:<TermsForm />
+      },
+      {
+        path:"skills",
+        element:<Skillselectionform/>
+      },
+      {
+        path:"birthday",
+        element:<Birthdayform/>
+      }
     ]
+  },
+  {
+    path: "/auth/thanks",
+    element: <Thanks/>
   }
 ]);
 
